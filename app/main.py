@@ -13,7 +13,7 @@ app.add_middleware(LoggingMiddleware)
 
 # linking endpoints
 
-app.include_router(routes_auth.router, tags=['Auth'])
+app.include_router(routes_auth.router, tags=['Auth']) 
 app.include_router(routes_predict.router, tags=['Prediction'])
 
 

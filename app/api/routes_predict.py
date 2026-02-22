@@ -23,5 +23,5 @@ class InputFeatures(BaseModel):
 
 @router.post('/predict')
 def predict_price(input: InputFeatures, user=Depends(get_current_user), _=Depends(get_api_key)):
-    prediction =  predict_car_price(input.model_dump)
+    prediction =  predict_car_price(input.model_dump())
     return {'predicted_price':prediction}

@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 from app.core.config import settings
-from app.cache.redis_cache import set_cashed_prediction, get_cached_prediction
+from app.cache.redis_cache import set_cached_prediction, get_cached_prediction
 
 
 
@@ -13,10 +13,14 @@ def predict_car_price(data: dict):
 
     if cached:
         return cached
-    
+
     input_data = pd.DataFrame([data])
+
+    # Ensure column order matches training
+    input_data = input_data[model.feature_names_in_]
+
     prediction = model.predict(input_data)[0]
 
-    set_cashed_prediction(cache_key, prediction)
+    set_cached_prediction(cache_key, float(prediction))
 
-    return prediction
+    return float(prediction)

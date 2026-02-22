@@ -3,13 +3,13 @@ from pydantic import BaseModel
 from app.core.security import create_token
 
 
-Router = APIRouter()
+router = APIRouter()
 
 class AuthInput(BaseModel):
     username: str
     password: str
 
-@Router.post('/login')
+@router.post('/login')
 def login(auth: AuthInput):
     if(auth.username=='admin') and (auth.password=='admin'):
         token=create_token({'sub':auth.username})
