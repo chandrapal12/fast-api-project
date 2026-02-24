@@ -17,40 +17,29 @@ Source: Included inside this repository
 
 Number of records: 6907
 
-Features include:
+- Features include:
 
-company
-year
-owner
-fuel
-seller_type
-transmission
-km_driven
-mileage_mpg
-engine_cc
-max_power_bhp 
-torque_nm
-seats
+- company
+- year
+- owner
+- fuel
+- seller_type
+- transmission
+- km_driven
+- mileage_mpg
+- engine_cc
+- max_power_bhp 
+- torque_nm
+- eats
 
-Target Variable:
-Selling_Price
+- Target Variable:
 
-
-### 🧠 Models Used
-
-The following regression models were trained and evaluated:
-
-Linear Regression
-Lasso Regression
-Ridge Regression
-Decision Tree Regressor
-Random Forest Regressor
-
+- Selling_Price
 
 
 ### ✅ Best Model:
 
-(Random Forest / whichever you used)
+(Random Forest)
 
 RMSE: 172392.13
 
@@ -58,15 +47,15 @@ RMSE: 172392.13
 
 ### ⚙️ Tech Stack
 
-Python
-Pandas & NumPy (Data Processing)
-Scikit-learn (Model Training)
-Matplotlib & Seaborn (EDA & Visualization)
-FastAPI (Model Deployment)
-Docker (Containerization)
-Prometheus (Monitoring)
-Grafana (Visualization & Metrics Dashboard)
-Render (Cloud Deployment)
+- Python
+- Pandas & NumPy (Data Processing)
+- Scikit-learn (Model Training)
+- Matplotlib & Seaborn (EDA & Visualization)
+- FastAPI (Model Deployment)
+- Docker (Containerization)
+- Prometheus (Monitoring)
+- Grafana (Visualization & Metrics Dashboard)
+- Render (Cloud Deployment)- 
 
 
 ### 🚀 Deployment
