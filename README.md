@@ -64,5 +64,5 @@ The trained model is deployed as a REST API using FastAPI and containerized with
 
 ### 👨‍💻 Author
 
-Chandra Pal Keshari
-GitHub: https://github.com/chandrapal12
+* Chandra Pal Keshari
+* GitHub: https://github.com/chandrapal12
